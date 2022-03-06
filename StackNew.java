@@ -5,50 +5,33 @@ public class StackNew
 
 	public static void main(String[] args) 
 	{
+		/**
+			 * Main method for manipulation Queue Operation
+			 * 
+			 * @param args - Default Java param (Not used)
+			 */
 
-		/*
-		 * PROCEDURE :
-		 * 
-		 * 1.creating an Object of class Stack
-		 * 2.Calling method to push value to stack
-		 * 3.calling method to display value of stack
-		 */
+			/**
+			 * PROCEDURE
+			 * 1.creating Object 
+			 * 2.Calling method to add value at first
+			 * 3.calling method to display value of queue
+			 */
 
-		/*
-		 * deleting stack head element
-		 */
-		System.out.println("deleting element ::");
-		/*
-		 * 1.creating an Oject of class Stack
-		 */
-		Stack stack = new Stack();
+			/*
+			 * 1.creating an Object
+			 */
 
-		/*
-		 * Calling mathod addNode to add elements
-		 */
-		stack.addNode(70);
-		stack.addNode(30);
-		stack.addNode(56);
+			System.out.println("Deleting element from queue ::");
+			Stack stack = new Stack();
 
-		/*
-		 * Calling Method Peak it will returns the value of what is on the top of the
-		 * stack
-		 */
-		stack.peak();
+			/*
+			 * Adding element to the queue
+			 */
+			stack.addNode(56);
+			stack.addNode(30);
+			stack.addNode(70);
+			stack.printList();
 
-		/*
-		 * pop: Created Method deleteHead will remove the value of the stack and then
-		 * return it
-		 */
-		stack.deleteHead();
-		stack.printList();
-		stack.peak();
-		stack.deleteHead();
-		stack.printList();
-		stack.peak();
-		stack.deleteHead();
-
+		}
 	}
-}
-
-
